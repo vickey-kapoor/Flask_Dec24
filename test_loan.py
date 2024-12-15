@@ -10,7 +10,7 @@ def client():
 def test_home(client):
     resp = client.get("/")
     assert resp.status_code == 200
-    resp.text = "<h1>Loan Approval Application</h1>"
+    resp.text = "<h1>Loan Approval Application V2 !!!</h1>"
 
 def test_predict(client):
     test_data = {
